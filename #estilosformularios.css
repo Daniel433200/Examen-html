@@ -1,0 +1,6 @@
+#body
+{background-color:Violet;font-family:Arial,sans-serif}
+#h1{font-family:Arial,sans-serif;font-style:italic}
+#fieldset{margin:8px 0}
+#label,legend{color:DarkBlue;font-family:Arial,sans-serif;font-size:20px}
+#input,select{margin:3px}

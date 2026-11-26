@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Haga su reserva</title>
+    <link rel="stylesheet" href="css/estilosformularios.css">
+</head>
+<body>
+<h1>Haga su reserva</h1>
+<form action="realizarreserva.php" method="get">
+<fieldset>
+    <legend>Datos Personales</legend>
+<label for="nombre">Nombre:</label>
+<input id="nombre" name="nombre" type="text"
+maxlength="30" required autofocus><br><br>
+<label for="apellidos">Apellidos:</label>
+<input id="apellidos" name="apellidos" type="text" 
+maxlength="50"><br><br>
+<label for="dni">Dni:</label>
+<input id="dni" name="dni" type="text" 
+placeholder="dni con letra" required></fieldset><br>
+<fieldset><legend>Datos de su estancia</legend>
+<label for="personas">Nº personas:</label>
+<input id="personas" name="personas" 
+type="number" value="2" min="1" max="6"><br><br>
+<label for="llegada">Fecha de llegada:</label>
+<input id="llegada" name="llegada" 
+type="date"><br><br><label for="salida">Fecha de salida:</label>
+<input id="salida" name="salida" type="date"><br><br>
+<label for="habitacion">Tipo habitación:</label>
+<select id="habitacion" name="habitacion"><option>Individual</option><option selected>Doble</option><option>Triple</option></select><br><br>
+<label for="fumador">No fumador:</label>
+<input id="fumador" name="fumador" type="checkbox" checked><br><br>
+<label>Motivo del viaje:</label>
+<input type="radio" id="trabajo" name="motivo" value="Trabajo">
+<label for="trabajo">Trabajo</label>
+<input type="radio" id="ocio" name="motivo" value="Ocio" checked>
+<label for="ocio">Ocio</label><input type="radio" 
+id="otros" name="motivo" value="Otros"><label for="otros">Otros</label>
+</fieldset><br>
+<input type="submit" value="Reservar"><input 
+type="reset" value="Reiniciar">
+</form>
+</body>
+</html>
